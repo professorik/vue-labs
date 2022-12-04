@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project 3</title>
+  <meta charset="utf-8" />
+  <link href='styles.css' rel='stylesheet' type='text/css'>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="card.js"></script>
+  <script src="navbar.js"></script>
+  <script src="vue-ini.js"></script>
+</head>
+
+<body>
+<div id="app">
+    <navbar v-model="isList"></navbar>
+    <div class="search-wrapper">
+        <input type="text" v-model="search" placeholder="Search title.."/>
+    </div>
+    <div class="wrapper">
+        <card v-for="item in filteredList" :is-list=isList :img=item.img :title=item.title></card>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+html, body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+div#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.wrapper {
+  display: flex;
+  max-width: 445px;
+  flex-wrap: wrap;
+  padding-top: 12px;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 6px, rgba(0, 0, 0, 0.1) 0 1px 4px;
+  margin: 12px;
+  transition: .15s all ease-in-out;
+  text-align: center;
+}
+.card > img {
+  height: 100px;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.tile {
+  max-width: 124px;
+}
+
+.list {
+  width: 500px;
+  display: inline-flex;
+  align-items: center;
+}
+.list > img {
+  margin: 10px;
+}
+
+
+.search-wrapper > input {
+  padding: 4px 12px;
+  border: 1px solid rgba(0, 0, 0, .12);
+}
+
+
+.navbar {
+  width: 100%;
+  padding: 8px;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: rgb(97, 161, 188);
+}
+.navbar > input {
+  padding: 2px;
+  border: none;
+  outline: none;
+  width: 30px;
+  filter: invert(1);
+  margin-right: 10px;
+}
+.navbar > input.active {
+  background-color: #dcff62;
+}

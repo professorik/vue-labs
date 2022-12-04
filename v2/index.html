@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project 3</title>
+    <meta charset="utf-8"/>
+    <link href='styles.css' rel='stylesheet' type='text/css'>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="item.js"></script>
+    <script src="vue-ini.js"></script>
+</head>
+
+<body>
+  <div id="app">
+      <h1>Services</h1>
+      <item v-for="p in goods" @update-cart="addPrice" :title=p.title :price=p.price :sel=p.selected></item>
+      <hr>
+      <item title='Total:' :price="price" uncolored></item>
+  </div>
+</body>
+</html>

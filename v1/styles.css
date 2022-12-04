@@ -1,0 +1,24 @@
+.edit {
+    display: table;
+    background-color: blue;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.edit > input {
+    border: 0;
+    border-radius: 2px;
+}
+
+.label {
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.label > button {
+    outline: none;
+    border: none;
+    background: none;
+    font-size: x-large;
+    padding-right: 10px;
+}
